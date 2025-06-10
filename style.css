@@ -180,3 +180,45 @@ textarea {
     font-size: 1.4rem;
   }
 }
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  z-index: 1000;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+  margin-right: 0.75rem;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #111;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .navbar {
+    justify-content: center;
+    padding: 0.75rem 1rem;
+  }
+
+  .logo {
+    width: 28px;
+    height: 28px;
+    margin-right: 0.5rem;
+  }
+
+  .brand {
+    font-size: 1.25rem;
+  }
+}
